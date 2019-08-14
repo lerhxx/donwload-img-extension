@@ -3,11 +3,13 @@
     "name": "download-img-extension",
     "version": "1.0.0",
     "description": "a project name download-img-extension",
-    "permissions": [],
+    "permissions": [
+        "tabs"
+    ],
     "browser_action": {
         "default_title": "",
         "default_icon": "./images/default.png",
-        "default_popup": ""
+        "default_popup": "./src/popup.html"
     },
     "content_scripts": [{
         "matches": ["*://*/*"],
